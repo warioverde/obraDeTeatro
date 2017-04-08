@@ -34,9 +34,9 @@ public class Obra {
 
 
     public Obra() {
-        this.protagonista = new Actor("hola",this,this,this);
-        this.antagonista = new Actor("Chao",this,this,this);
-        this.secundario = new Actor("wena",this,this,this);
+        this.protagonista = new Actor("Romeo , romeo....",this,this,this);
+        this.antagonista = new Actor("Yo mate a romeo",this,this,this);
+        this.secundario = new Actor("¿por que lo has matado?",this,this,this);
     }
     public void interpretar(){
         Obra miobra = new Obra();
