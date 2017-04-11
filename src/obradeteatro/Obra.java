@@ -33,14 +33,14 @@ public class Obra {
     }
 
 
-    public Obra() {
-        this.protagonista = new Actor("Romeo , romeo....",this,this,this);
-        this.antagonista = new Actor("Yo mate a romeo",this,this,this);
-        this.secundario = new Actor("¿por que lo has matado?",this,this,this);
-    }
+//   //*nunca hacer constructores con asociacones public Obra() {
+//        this.protagonista = new Actor("Romeo , romeo....",this);
+//        this.antagonista = new Actor("Yo mate a romeo",this);
+//        this.secundario = new Actor("¿por que lo has matado?",this);
+//    }
     public void interpretar(){
         Obra miobra = new Obra();
-        System.out.println(protagonista.getLinea());
+        System.out.println(antagonista.getLinea());
         System.out.println(antagonista.getLinea());
         System.out.println(secundario.getLinea());
         
@@ -48,6 +48,19 @@ public class Obra {
         
         
     }
+
+    public void setProtagonista(Actor protagonista) {
+        this.protagonista = protagonista;
+    }
+
+    public void setAntagonista(Actor antagonista) {
+        this.antagonista = antagonista;
+    }
+
+    public void setSecundario(Actor secundario) {
+        this.secundario = secundario;
+    }
+
     
     
     

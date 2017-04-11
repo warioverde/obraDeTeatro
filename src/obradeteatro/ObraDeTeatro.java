@@ -16,8 +16,23 @@ public class ObraDeTeatro {
      */
     public static void main(String[] args) {
        Obra miobra = new Obra();
+       Actor prota = new Actor("Hola",miobra);
+       Actor anta = new Actor("caho ", miobra);
+       Actor secu = new Actor ("wena", miobra);
        
-      miobra.interpretar();
+       
+       miobra.setProtagonista(prota);
+       miobra.setAntagonista(anta);
+       miobra.setSecundario(secu);
+       
+       
+      
+      
+       
+        System.out.println( anta.getLinea());
+        System.out.println(prota.getLinea());
+        System.out.println( secu.getLinea());
+     
     }
     
 }

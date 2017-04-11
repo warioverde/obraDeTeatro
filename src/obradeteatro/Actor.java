@@ -12,9 +12,8 @@ package obradeteatro;
 public class Actor {
    private String linea;
    //
-   private Obra protagonizado;
-   private Obra antagonizado;
-   private Obra secundariado;
+   private Obra actuado;
+
 
     public String getLinea() {
         return linea;
@@ -26,11 +25,10 @@ public class Actor {
 
     
 
-    public Actor(String linea, Obra protagonizado, Obra antagonizado, Obra secundariado) {
+    public Actor(String linea, Obra actuado) {
         this.linea = linea;
-        this.protagonizado = protagonizado;
-        this.antagonizado = antagonizado;
-        this.secundariado = secundariado;
+        this.actuado=actuado;
+       
     }
 
     
